@@ -1,0 +1,12 @@
+name: kill-switch-drill
+on:
+  workflow_dispatch:
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hold the drill window open
+        run: |
+          echo "kill-switch drill window is open"
+          sleep 1200
+          echo "kill-switch drill window has closed"
